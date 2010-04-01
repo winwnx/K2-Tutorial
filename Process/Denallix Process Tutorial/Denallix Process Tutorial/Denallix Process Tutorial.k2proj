@@ -9,6 +9,13 @@
     <Language>C#</Language>
     <Name>Denallix Process Tutorial</Name>
     <BuildingInsideVisualStudio>False</BuildingInsideVisualStudio>
+    <SelectedEnvironment>Development</SelectedEnvironment>
+    <DeploymentLabelName>TAOBAO-HZ\zude - 4/1/2010 5:10:40 PM</DeploymentLabelName>
+    <DeploymentLabelDescription>
+    </DeploymentLabelDescription>
+    <SmartObjectConnectionStringProperty>$Field=SmartObject Server</SmartObjectConnectionStringProperty>
+    <WorkflowManagementConnectionStringProperty>$Field=Workflow Management Server</WorkflowManagementConnectionStringProperty>
+    <HistoryIsAdvanced>Normal</HistoryIsAdvanced>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -29,8 +36,9 @@
     </PersistableObjects>
   </ProjectExtensions>
   <ItemGroup>
-    <Content Include="Process1.kprx">
+    <Content Include="ExpenseClaim.kprx">
       <SubType>Content</SubType>
+      <Excluded>False</Excluded>
     </Content>
   </ItemGroup>
 </Project>
