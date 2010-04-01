@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{D50D8A3F-5CE1-4E89-9491-F84FAB0E386A}") = "Denallix Process Tutorial", "Denallix Process Tutorial\Denallix Process Tutorial.k2proj", "{C0AA6571-A991-4483-9F0A-4D9BC51A235A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0AA6571-A991-4483-9F0A-4D9BC51A235A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AA6571-A991-4483-9F0A-4D9BC51A235A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AA6571-A991-4483-9F0A-4D9BC51A235A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C0AA6571-A991-4483-9F0A-4D9BC51A235A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AA6571-A991-4483-9F0A-4D9BC51A235A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0AA6571-A991-4483-9F0A-4D9BC51A235A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

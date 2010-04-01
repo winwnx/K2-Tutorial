@@ -47,7 +47,8 @@
                 <asp:Parameter Name="Region" Type="Int64" />
             </InsertParameters>
         </asp:SqlDataSource>
-        <asp:SqlDataSource ID="LoadRegions" runat="server" ConnectionString="Port=5555;Server=taobao-wf-dev;SmartObjects=DenallixRegion"
+        <asp:SqlDataSource ID="LoadRegions" runat="server" CancelSelectOnNullParameter="False"
+            ConnectionString="Port=5555;Server=taobao-wf-dev;SmartObjects=DenallixRegion"
             DeleteCommand="[DenallixRegion.Delete]" DeleteCommandType="StoredProcedure" InsertCommand="[DenallixRegion.Create]"
             InsertCommandType="StoredProcedure" ProviderName="SourceCode.Data.SmartObjectsClient"
             SelectCommand="[DenallixRegion.GetList]" SelectCommandType="StoredProcedure"

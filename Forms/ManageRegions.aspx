@@ -11,7 +11,8 @@
         <a href="ManageEmployees.aspx">ManageEmployees.aspx</a><hr />
     <div>
         &nbsp;</div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Port=5555;Server=taobao-wf-dev;SmartObjects=DenallixRegion"
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" CancelSelectOnNullParameter="False"
+            ConnectionString="Port=5555;Server=taobao-wf-dev;SmartObjects=DenallixRegion"
             DeleteCommand="[DenallixRegion.Delete]" DeleteCommandType="StoredProcedure" InsertCommand="[DenallixRegion.Create]"
             InsertCommandType="StoredProcedure" ProviderName="SourceCode.Data.SmartObjectsClient"
             SelectCommand="[DenallixRegion.GetList]" SelectCommandType="StoredProcedure"
@@ -61,33 +62,7 @@
             </Columns>
         </asp:GridView>
         <br />
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="Port=5555;Server=taobao-wf-dev;SmartObjects=DenallixEmployee"
-            ProviderName="SourceCode.Data.SmartObjectsClient" SelectCommand="[DenallixEmployee.GetList]"
-            SelectCommandType="StoredProcedure">
-            <SelectParameters>
-                <asp:Parameter Name="ContactNumber" Type="String" />
-                <asp:Parameter Name="DOB" Type="DateTime" />
-                <asp:Parameter Name="EmailAddress" Type="String" />
-                <asp:Parameter Name="EmployeeID" Type="Int64" />
-                <asp:Parameter Name="FirstName" Type="String" />
-                <asp:Parameter Name="LastName" Type="String" />
-                <asp:Parameter Name="Region" Type="Int64" />
-            </SelectParameters>
-        </asp:SqlDataSource>
-        <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True"
-            AutoGenerateColumns="False" DataKeyNames="EmployeeID" DataSourceID="SqlDataSource2">
-            <Columns>
-                <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" InsertVisible="False"
-                    ReadOnly="True" SortExpression="EmployeeID" />
-                <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
-                <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
-                <asp:BoundField DataField="DOB" HeaderText="DOB" SortExpression="DOB" />
-                <asp:BoundField DataField="EmailAddress" HeaderText="EmailAddress" SortExpression="EmailAddress" />
-                <asp:BoundField DataField="ContactNumber" HeaderText="ContactNumber" SortExpression="ContactNumber" />
-                <asp:BoundField DataField="Region" HeaderText="Region" SortExpression="Region" />
-            </Columns>
-        </asp:GridView>
+        &nbsp;
     </form>
 </body>
 </html>

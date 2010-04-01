@@ -1,0 +1,36 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c0aa6571-a991-4483-9f0a-4d9bc51a235a}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Denallix_Process_Tutorial</RootNamespace>
+    <AssemblyName>Denallix_Process_Tutorial</AssemblyName>
+    <Language>C#</Language>
+    <Name>Denallix Process Tutorial</Name>
+    <BuildingInsideVisualStudio>False</BuildingInsideVisualStudio>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SourceCode\v1.0\ProjectSystem.targets" />
+  <ProjectExtensions>
+    <PersistableObjects>
+      <Project xmlns="">
+        <Guid>17c9d192-7c87-4792-8ce7-e1ac273273b9</Guid>
+      </Project>
+    </PersistableObjects>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Content Include="Process1.kprx">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
