@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{D50D8A3F-5CE1-4E89-9491-F84FAB0E386A}") = "Denallix SmartObject Tutorial", "Denallix SmartObject Tutorial\Denallix SmartObject Tutorial.k2proj", "{44C8494D-8DE8-483F-8142-0A691956C37B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44C8494D-8DE8-483F-8142-0A691956C37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C8494D-8DE8-483F-8142-0A691956C37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C8494D-8DE8-483F-8142-0A691956C37B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{44C8494D-8DE8-483F-8142-0A691956C37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C8494D-8DE8-483F-8142-0A691956C37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C8494D-8DE8-483F-8142-0A691956C37B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

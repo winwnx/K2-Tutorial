@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44c8494d-8de8-483f-8142-0a691956c37b}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Denallix_SmartObject_Tutorial</RootNamespace>
+    <AssemblyName>Denallix_SmartObject_Tutorial</AssemblyName>
+    <Language>C#</Language>
+    <Name>Denallix SmartObject Tutorial</Name>
+    <BuildingInsideVisualStudio>False</BuildingInsideVisualStudio>
+    <SelectedEnvironment>Development</SelectedEnvironment>
+    <DeploymentLabelName>TAOBAO-HZ\zude - 2010/4/1 9:53:57</DeploymentLabelName>
+    <DeploymentLabelDescription>
+    </DeploymentLabelDescription>
+    <SmartObjectConnectionStringProperty>$Field=SmartObject Server</SmartObjectConnectionStringProperty>
+    <WorkflowManagementConnectionStringProperty>$Field=Workflow Management Server</WorkflowManagementConnectionStringProperty>
+    <HistoryIsAdvanced>Normal</HistoryIsAdvanced>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SourceCode\v1.0\ProjectSystem.targets" />
+  <ItemGroup>
+    <Content Include="DenallixEmployee.sodx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DenallixExpenseClaim.sodx">
+      <SubType>Content</SubType>
+      <Excluded>False</Excluded>
+    </Content>
+    <Content Include="DenallixRegion.sodx">
+      <SubType>Content</SubType>
+      <Excluded>False</Excluded>
+    </Content>
+  </ItemGroup>
+</Project>
